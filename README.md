@@ -20,3 +20,7 @@ Learn expect DSL from https://www.relishapp.com/rspec/rspec-expectations/docs/bu
 ## Capybara
 
 Learn the DSL from https://github.com/jnicklas/capybara.
+
+## Debugging
+
+Try `save_and_open_page` or `save_and_open_screenshot` (Capybara helpers) in your scenaraios.
