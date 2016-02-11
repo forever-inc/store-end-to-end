@@ -10,6 +10,7 @@ require 'capybara/rspec'
 
 Capybara.javascript_driver = :webkit
 Capybara.app_host = "https://store.staging4ever.com"
+Capybara.default_wait_time = 30
 
 Capybara::Webkit.configure do |config|
   config.allow_unknown_urls
@@ -63,4 +64,9 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+
+  config.before(:each) do
+    browser = Capybara.current_session.driver.browser
+    browser.clear_cookies
+  end
 end

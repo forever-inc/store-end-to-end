@@ -1,6 +1,4 @@
-# Readme
-
-## Installation
+# Getting Started
 
 Make sure you have QT 5.0+ installed and linked to qmake.
 ```
@@ -11,7 +9,7 @@ bundle
 
 ## Tests
 
-Run `rspec`.
+Run `rspec`.  Currently the tests are not consistent because of server response times, so run it a couple times if it fails.
 
 ## Rspec
 
